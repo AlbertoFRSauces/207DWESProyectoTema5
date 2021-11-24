@@ -23,8 +23,8 @@ try {
                     T01_DescUsuario varchar(255) NOT NULL,
                     T01_NumConexiones int DEFAULT 0,
                     T01_FechaHoraUltimaConexion int,
-                    T01_Perfil ,
-                    T01_ImagenUsuario 
+                    T01_Perfil enum('administrador', 'usuario') DEFAULT 'usuario',
+                    T01_ImagenUsuario mediumblob NULL
                 )engine=innodb;
                 CREATE TABLE IF NOT EXISTS DB207DWESProyectoTema5.T02_Departamento(
                     T02_CodDepartamento varchar(3) PRIMARY KEY,
