@@ -5,12 +5,14 @@ Ejercicios del Tema 5 de PHP, código de realización de los ejercicios y muestr
 
 **Fecha Inicio Proyecto: 23/11/2021**
 
-**Ultima Actualización: 23/11/2021**
+**Ultima Actualización: 25/11/2021**
 
 ## Descripción 
 Ejercicios del Tema 5 de PHP, código de realización de los ejercicios y muestra del código de cada ejercicio.
 
 ## Funcionalidades
+- Control de acceso de usuario
+- Control de acceso de usuario con DB
 
 ## Front end
 - HTML

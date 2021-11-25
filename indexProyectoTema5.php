@@ -5,8 +5,8 @@
         <meta charset ="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <meta name="author" content="Alberto Fernandez Ramirez">
-        <meta name="application-name" content="Proyecto 2021 DAW">
-        <meta name="description" content="Mi pagina web DAW">
+        <meta name="application-name" content="Proyecto Tema 5">
+        <meta name="description" content="Mi pagina web del Tema5">
         <meta name="keywords" content="analítica web, seo, web semántica, seo semántico, analytics" >
         <meta name="robots" content="index, follow">
         <link href="webroot/css/estilo.css" rel="stylesheet" type="text/css">
@@ -20,6 +20,69 @@
             <h2>Desarrollo Web Entorno Servidor - TEMA 5</h2>
         </article>
         <main class="container">
+            <section class="primerasfilas">
+                <table class="tabla">
+                    <tr class="bordetitulo">
+                        <td>
+                            <figure>
+                                <a><figcaption class="titulofoto">Archivo Crear DB Explotación.</figcaption></a>
+                            </figure>
+                        </td>
+                        <td class="cajaimagen">
+                            <figure>
+                                <a href="scriptDB/CreaDB207DWESProyectoTema5-1&1.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                            </figure>
+                        </td>
+                        <td class="cajaimagen">
+                            <figure>
+                                <a href="mostrarcodigo/muestraCreaDB207DWESProyectoTema5-1&1.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="primerasfilas">
+                <table class="tabla">
+                    <tr class="bordetitulo">
+                        <td>
+                            <figure>
+                                <a><figcaption class="titulofoto">Archivo Carga Inicial DB Explotación.</figcaption></a>
+                            </figure>
+                        </td>
+                        <td class="cajaimagen">
+                            <figure>
+                                <a href="scriptDB/CargaInicialDB207DWESProyectoTema5-1&1.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                            </figure>
+                        </td>
+                        <td class="cajaimagen">
+                            <figure>
+                                <a href="mostrarcodigo/muestraCargaInicialDB207DWESProyectoTema5-1&1.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="primerasfilas">
+                <table class="tabla">
+                    <tr class="bordetitulo">
+                        <td>
+                            <figure>
+                                <a><figcaption class="titulofoto">Archivo Borrar DB Explotación.</figcaption></a>
+                            </figure>
+                        </td>
+                        <td class="cajaimagen">
+                            <figure>
+                                <a href="scriptDB/BorraDB207DWESProyectoTema5-1&1.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                            </figure>
+                        </td>
+                        <td class="cajaimagen">
+                            <figure>
+                                <a href="mostrarcodigo/muestraBorraDB207DWESProyectoTema5-1&1.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </section>
             <section class="primerasfilas">
                 <table class="tabla">
                     <tr class="bordetitulo">
@@ -63,11 +126,6 @@
                         <td>
                             <figure>
                                 <a><figcaption class="titulofoto">Archivo de configuracion configDBPDO.</figcaption></a>
-                            </figure>
-                        </td>
-                        <td class="cajaimagen">
-                            <figure>
-                                <a><img src="webroot/css/img/play.png" class="muestraconfig" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td class="cajaimagen">
@@ -156,12 +214,7 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="codigoPHP/ejercicio03pdo.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
-                                <a href="mostrarcodigo/muestraEjercicio03pdo.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="../207DWESLoginLogoutTema5/indexProyectoLoginLogoutTema5.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                     </tr>

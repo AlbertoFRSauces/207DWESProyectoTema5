@@ -6,6 +6,7 @@
 USE DB207DWESProyectoTema5;
 
 -- Insertar datos en la tabla T01_Usuario de la base de datos DB207DWESProyectoTema5
+-- Usuarios con cuenta y con el rol de usuario por defecto
 INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES
     ('albertoF',SHA2('albertoFpaso',256),'AlbertoF'),
     ('outmane',SHA2('outmanepaso',256),'Outmane'),
@@ -20,6 +21,10 @@ INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES
     ('amor',SHA2('amorpaso',256),'Amor'),
     ('antonio',SHA2('antoniopaso',256),'Antonio'),
     ('albertoB',SHA2('albertoBpaso',256),'AlbertoB');
+
+-- Usuario administrador con el rol de administrador
+INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario, T01_Perfil) VALUES
+    ('admin',SHA2('adminpaso',256),'Admin','administrador');
 
 -- Insertar datos en la tabla T02_Departamento de la base de datos DB207DWESProyectoTema5
 -- 1637700241 = 23-noviembre-2021 21:44:00

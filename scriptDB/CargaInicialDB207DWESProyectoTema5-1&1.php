@@ -1,7 +1,8 @@
 <?php
 /**
- * Author:  Alberto Fernandez Ramirez
- * Created: 3 nov. 2021
+ * @author: Alberto Fernandez Ramirez
+ * @since: 24/11/2020
+ * @copyright: Copyright (c) 2021, Alberto Fernandez Ramirez
  * Script carga inicial de base de datos
  */
 //Incluyo las variables de la conexion
@@ -31,6 +32,8 @@ try {
                     ('amor',SHA2('amorpaso',256),'Amor'),
                     ('antonio',SHA2('antoniopaso',256),'Antonio'),
                     ('albertoB',SHA2('albertoBpaso',256),'AlbertoB');
+                INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario, T01_Perfil) VALUES
+                    ('admin',SHA2('adminpaso',256),'Admin','administrador');
                 INSERT INTO T02_Departamento (T02_CodDepartamento, T02_DescDepartamento, T02_FechaCreacionDepartamento, T02_VolumenDeNegocio) VALUES
                     ('INF','Departamento de Informatica',1637700241,1.5),
                     ('BIO','Departamento de Biologia',1637700241,2.5),

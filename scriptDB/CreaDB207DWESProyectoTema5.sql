@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS DB207DWESProyectoTema5.T01_Usuario(
     T01_DescUsuario varchar(255) NOT NULL,
     T01_NumConexiones int DEFAULT 0,
     T01_FechaHoraUltimaConexion int,
-    T01_Perfil ,
-    T01_ImagenUsuario 
+    T01_Perfil enum('administrador', 'usuario') DEFAULT 'usuario',
+    T01_ImagenUsuario mediumblob NULL
 )engine=innodb;
 
 -- CREAR Tabla T02_Departamento dentro de la base de datos DB207DWESProyectoTema5
