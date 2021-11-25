@@ -13,6 +13,7 @@
              * @author: Alberto Fernandez Ramirez
              * @since: 24/11/2020
              * @version: v1.Realizacion del ejercicio
+             * @copyright: Copyright (c) 2021, Alberto Fernandez Ramirez
              * 0. Mostrar el contenido de las variables superglobales y phpinfo(). ProyectoTema5
              */
             ?>

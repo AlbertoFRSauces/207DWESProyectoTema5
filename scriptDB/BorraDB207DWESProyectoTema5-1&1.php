@@ -1,8 +1,9 @@
 <?php
 /**
- * Author:  Alberto Fernandez Ramirez
- * Created: 3 nov. 2021
- * Script borrado de base de datos y usuario
+ * @author: Alberto Fernandez Ramirez
+ * @since: 24/11/2020
+ * @copyright: Copyright (c) 2021, Alberto Fernandez Ramirez
+ * Script borrado de tablas usuario y departamento
  */
 //Incluyo las variables de la conexion
 require_once '../config/configDBPDO.php';

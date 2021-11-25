@@ -3,6 +3,7 @@
      * @author: Alberto Fernandez Ramirez
      * @since: 24/11/2020
      * @version: v1.Realizacion del ejercicio
+     * @copyright: Copyright (c) 2021, Alberto Fernandez Ramirez
      * 1. Desarrollo de un control de acceso con identificación del usuario basado en la función header(). ProyectoTema5
      */
     if ($_SERVER['PHP_AUTH_USER']!='admin' || $_SERVER['PHP_AUTH_PW']!='paso') { //Si el usuario no es admin y la contrasena no es paso entramos en el if
