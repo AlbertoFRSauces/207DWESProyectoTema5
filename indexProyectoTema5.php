@@ -233,11 +233,6 @@
                                 <a href="codigoPHP/ejercicio04pdo.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
-                            <figure>
-                                <a href="mostrarcodigo/muestraEjercicio04pdo.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
-                            </figure>
-                        </td>
                     </tr>
                 </table>
             </section>
@@ -254,11 +249,6 @@
                                 <a href="codigoPHP/ejercicio05pdo.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
-                            <figure>
-                                <a href="mostrarcodigo/muestraEjercicio05pdo.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
-                            </figure>
-                        </td>
                     </tr>
                 </table>
             </section>
@@ -273,11 +263,6 @@
                         <td>
                             <figure>
                                 <a href="codigoPHP/ejercicio06pdo.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
-                                <a href="mostrarcodigo/muestraEjercicio06pdo.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>

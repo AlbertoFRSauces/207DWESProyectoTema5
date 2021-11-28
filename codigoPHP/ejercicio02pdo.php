@@ -19,16 +19,16 @@ if (!isset($_SERVER['PHP_AUTH_USER']) || (!isset($_SERVER['PHP_AUTH_PW']))) {
         $usuario = $_SERVER['PHP_AUTH_USER']; //Guardo en una variable los datos pasados por teclado del usuario
         $password = $_SERVER['PHP_AUTH_PW']; //Guardo en una variable los datos pasados por teclado de la password
         
-        $consulta = "SELECT T01_CodUsuario, T01_Password FROM T01_Usuario WHERE T01_CodUsuario=:CodUsuario"; //Creo la consulta
+        $consulta = "SELECT T01_CodUsuario, T01_Password FROM T01_Usuario WHERE T01_CodUsuario='{$usuario}'"; //Creo la consulta y le paso el usuario a la consulta
         $resultadoConsulta=$DAW207DBDepartamentos->prepare($consulta); // Preparo la consulta antes de ejecutarla
-        $aParametros = [':CodUsuario' => $usuario]; //Almaceno los parametros en un array, al parametro CodUsuario le paso el dato recogido por teclado
-        $resultadoConsulta->execute($aParametros);//Ejecuto la consulta con el array de parametros 
+        $resultadoConsulta->execute();//Ejecuto la consulta con el array de parametros 
 
         $oUsuario = $resultadoConsulta->fetchObject(); //Obtengo el resultado de la consulta en un objeto
-        if(($oUsuario->T01_CodUsuario == $usuario) && ($oUsuario->T01_Password == hash('sha256', $password))) { //Compruebo si los datos coinciden con los de la base de datos
-            echo "Usuario y password correctos." . "<br/>"; //Muestro un mensaje si todo ha ido bien.
-            echo "Nombre de usuario: " . $_SERVER['PHP_AUTH_USER'] . "<br/>"; //Muestro el usuario
-            echo "Password: " . $_SERVER['PHP_AUTH_PW']; //Muestro la password
+        $passwordEncriptada = hash('sha256', ($usuario.$password)); //Encripto la password con el nombre de usuario mas su password pasada por teclado.
+        if(($oUsuario->T01_CodUsuario == $usuario) && ($oUsuario->T01_Password == $passwordEncriptada)) { //Compruebo si los datos coinciden con los de la base de datos
+            echo "Usuario y password correctos!" . "<br/>"; //Muestro un mensaje si todo ha ido bien.
+            echo "Nombre de usuario: " . $usuario . "<br/>"; //Muestro el usuario
+            echo "Password: " . $password; //Muestro la password
         }else{ // Si no existe, se vuelven a pedir las credenciales hasta que se introduzcan correctamente
             header('WWW-Authenticate: Basic realm="Contenido restringido"'); //Muestra de nuevo la cabecera de autentificacion
             header("HTTP/1.0 401 Unauthorized"); //Redirige con el estado Unauthorized
