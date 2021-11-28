@@ -11,6 +11,10 @@
         header('HTTP/1.0 401 Unauthorized'); //Redirige con el estado Unauthorized
         echo "El usuario no puede ser reconocido. No puedes ACCEDER!"; //Muestro un mensaje de error
         exit;
+    }else{
+        echo "Usuario y password correctos!" . "<br/>"; //Muestro un mensaje si todo ha ido bien.
+        echo "Nombre de usuario: " . $_SERVER['PHP_AUTH_USER'] . "<br/>"; //Muestro el usuario
+        echo "Password: " . $_SERVER['PHP_AUTH_PW']; //Muestro la password
     }
 ?>
 
