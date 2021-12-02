@@ -204,12 +204,7 @@
                     <tr class="bordetitulo">
                         <td>
                             <figure>
-                                <a><figcaption class="titulofoto">3. Desarrollo de una aplicación (Proyecto LoginLogoff) con control de acceso e identificación del
-                                usuario basado en un formulario (Login.php) con un botón de “Entrar” y en el uso de una tabla
-                                “Usuario” de la base de datos (PDO). En el caso de que tecleemos un usuario y password
-                                correctos se abrirá otra página (Programa.php) donde tendremos un botón de “Salir” que nos
-                                devolverá al Login.php (Funionalidad Logoff que nos redirige automáticamente a la página de
-                                autenticación).</figcaption></a>
+                                <a><figcaption class="titulofoto">3. Proyecto LoginLogoutTema5.</figcaption></a>
                             </figure>
                         </td>
                         <td>
@@ -225,7 +220,7 @@
                     <tr class="bordetitulo">
                         <td>
                             <figure>
-                                <a><figcaption class="titulofoto">4. Implantación uso y disfrute de Xdebug en nuestro entorno de desarrollo. (Instalado en Ubuntu Server junto a Apache y lo usamos desde Windows integrándolo en NetBeans).</figcaption></a>
+                                <a><figcaption class="titulofoto">4. Implantación uso y disfrute de Xdebug en nuestro entorno de desarrollo.</figcaption></a>
                             </figure>
                         </td>
                         <td>
@@ -241,7 +236,7 @@
                     <tr class="bordetitulo">
                         <td>
                             <figure>
-                                <a><figcaption class="titulofoto">5. Incorporar el control de acceso, identificación de usuario, cookies y sesiones a nuestro Mantenimiento de Departamentos.(Proyecto MtoDepartamentosTema5)</figcaption></a>
+                                <a><figcaption class="titulofoto">5. Proyecto MtoDepartamentosTema5</figcaption></a>
                             </figure>
                         </td>
                         <td>
@@ -272,7 +267,7 @@
         <footer class="piepagina">
             <a href="../proyectoDWES/indexProyectoDWES.php"><img src="../207DWESProyectoTema5/webroot/css/img/atras.png" class="imageatras" alt="IconoAtras" /></a>
             <a href="https://github.com/AlbertoFRSauces/207DWESProyectoTema5" target="_blank"><img src="../207DWESProyectoTema5/webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
-            <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
+            <p><a>&copy;</a><a href="http://daw207.ieslossauces.es/index.php">Alberto Fernández Ramírez</a> 29/09/2021 Todos los derechos reservados.</p>
             <p>Ultima actualización: 23/11/2021 22:33</p>
         </footer>
     </body>
