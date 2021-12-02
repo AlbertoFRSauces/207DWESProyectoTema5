@@ -23,16 +23,19 @@ if (!isset($_SERVER['PHP_AUTH_USER']) || (!isset($_SERVER['PHP_AUTH_PW']))) {
         $resultadoConsulta=$DAW207DBDepartamentos->prepare($consulta); // Preparo la consulta antes de ejecutarla
         $resultadoConsulta->execute();//Ejecuto la consulta con el array de parametros 
 
-        $oUsuario = $resultadoConsulta->fetchObject(); //Obtengo el resultado de la consulta en un objeto
-        $passwordEncriptada = hash('sha256', ($usuario.$password)); //Encripto la password con el nombre de usuario mas su password pasada por teclado.
-        if(($oUsuario->T01_CodUsuario == $usuario) && ($oUsuario->T01_Password == $passwordEncriptada)) { //Compruebo si los datos coinciden con los de la base de datos
-            echo "Usuario y password correctos!" . "<br/>"; //Muestro un mensaje si todo ha ido bien.
-            echo "Nombre de usuario: " . $usuario . "<br/>"; //Muestro el usuario
-            echo "Password: " . $password; //Muestro la password
-        }else{ // Si no existe, se vuelven a pedir las credenciales hasta que se introduzcan correctamente
-            header('WWW-Authenticate: Basic realm="Contenido restringido"'); //Muestra de nuevo la cabecera de autentificacion
-            header("HTTP/1.0 401 Unauthorized"); //Redirige con el estado Unauthorized
-            exit;
+        
+        if($resultadoConsulta->rowCount() > 0){
+            $oUsuario = $resultadoConsulta->fetchObject(); //Obtengo el resultado de la consulta en un objeto
+            $passwordEncriptada = hash('sha256', ($usuario.$password)); //Encripto la password con el nombre de usuario mas su password pasada por teclado.
+            if(($oUsuario->T01_CodUsuario != $usuario) && ($oUsuario->T01_Password != $passwordEncriptada)) { //Compruebo si los datos coinciden con los de la base de datos
+                header('WWW-Authenticate: Basic realm="Contenido restringido"'); //Muestra de nuevo la cabecera de autentificacion
+                header("HTTP/1.0 401 Unauthorized"); //Redirige con el estado Unauthorized
+                exit;
+            }else{ // Si no existe, se vuelven a pedir las credenciales hasta que se introduzcan correctamente
+                echo "Usuario y password correctos!" . "<br/>"; //Muestro un mensaje si todo ha ido bien.
+                echo "Nombre de usuario: " . $usuario . "<br/>"; //Muestro el usuario
+                echo "Password: " . $password; //Muestro la password
+            }
         }
     }catch(PDOException $excepcion){//Codigo que se ejecuta si hay algun error
         $errorExcepcion = $excepcion->getCode();//Obtengo el codigo del error y lo almaceno en la variable errorException
