@@ -5,7 +5,7 @@ Ejercicios del Tema 5 de PHP, código de realización de los ejercicios y muestr
 
 **Fecha Inicio Proyecto: 23/11/2021**
 
-**Ultima Actualización: 25/11/2021**
+**Ultima Actualización: 04/12/2021**
 
 ## Descripción 
 Ejercicios del Tema 5 de PHP, código de realización de los ejercicios y muestra del código de cada ejercicio.
@@ -24,6 +24,6 @@ Ejercicios del Tema 5 de PHP, código de realización de los ejercicios y muestr
 
 ## Entornos
 ### Desarrollo (local)
-- http://daw207.sauces.local/207DWESProyectoTema5/indexProyectoTema5.php
+- http://daw207.sauces.local/207DWESProyectoTema5
 ### Explotación (1&1)
-- http://daw207.ieslossauces.es/207DWESProyectoTema5/indexProyectoTema5.php
+- http://daw207.ieslossauces.es/207DWESProyectoTema5

@@ -6,6 +6,11 @@
         <link href="../webroot/css/estiloejercicio.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="../webroot/css/img/home.png" type="image/x-icon">
         <title>Ejercicio 00 PDO</title>
+        <style>
+            a{
+                background-color: #dddddd;
+            }
+        </style>  
     </head>
     <body>
             <?php
@@ -172,8 +177,8 @@
         <footer class="piepagina">
             <a href="../indexProyectoTema5.php"><img src="../webroot/css/img/atras.png" class="imageatras" alt="IconoAtras" /></a>
             <a href="https://github.com/AlbertoFRSauces/207DWESProyectoTema5" target="_blank"><img src="../webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
-            <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 24/11/2021 12:10</p>
+            <p><a>&copy;</a><a href="http://daw207.ieslossauces.es/index.php">Alberto Fernández Ramírez</a> 29/09/2021 Todos los derechos reservados.</p>
+            <p>Ultima actualización: 24/11/2021 12:10 - Release 1.4</p>
         </footer>
     </body>
 </html>
