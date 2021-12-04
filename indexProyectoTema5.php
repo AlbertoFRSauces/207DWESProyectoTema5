@@ -199,76 +199,12 @@
                     </tr>
                 </table>
             </section>
-            <section class="primerasfilas">
-                <table class="tabla">
-                    <tr class="bordetitulo">
-                        <td>
-                            <figure>
-                                <a><figcaption class="titulofoto">3. Proyecto LoginLogoutTema5.</figcaption></a>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
-                                <a href="../207DWESLoginLogoutTema5/indexProyectoLoginLogoutTema5.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
-                            </figure>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section class="primerasfilas">
-                <table class="tabla">
-                    <tr class="bordetitulo">
-                        <td>
-                            <figure>
-                                <a><figcaption class="titulofoto">4. Implantación uso y disfrute de Xdebug en nuestro entorno de desarrollo.</figcaption></a>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
-                                <a href="codigoPHP/ejercicio04pdo.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
-                            </figure>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section class="primerasfilas">
-                <table class="tabla">
-                    <tr class="bordetitulo">
-                        <td>
-                            <figure>
-                                <a><figcaption class="titulofoto">5. Proyecto MtoDepartamentosTema5</figcaption></a>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
-                                <a href="codigoPHP/ejercicio05pdo.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
-                            </figure>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section class="primerasfilas">
-                <table class="tabla">
-                    <tr class="bordetitulo">
-                        <td>
-                            <figure>
-                                <a><figcaption class="titulofoto">6. Ampliar la funcionalidad de la aplicación: MtoDepartamentos y MtoUsuarios.</figcaption></a>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure>
-                                <a href="codigoPHP/ejercicio06pdo.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
-                            </figure>
-                        </td>
-                    </tr>
-                </table>
-            </section>
         </main>
         <footer class="piepagina">
             <a href="../proyectoDWES/indexProyectoDWES.php"><img src="../207DWESProyectoTema5/webroot/css/img/atras.png" class="imageatras" alt="IconoAtras" /></a>
             <a href="https://github.com/AlbertoFRSauces/207DWESProyectoTema5" target="_blank"><img src="../207DWESProyectoTema5/webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a><a href="http://daw207.ieslossauces.es/index.php">Alberto Fernández Ramírez</a> 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 23/11/2021 22:33</p>
+            <p>Ultima actualización: 04/12/2021 18:58 - Release 1.4</p>
         </footer>
     </body>
 </html>
